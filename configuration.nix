@@ -27,7 +27,7 @@
     ]
 
     # xremapでキー設定をいい感じに変更
-    service.xremap = {
+    services.xremap = {
       userName = "Asaki";
       serviceMode = "system";
       config = {
