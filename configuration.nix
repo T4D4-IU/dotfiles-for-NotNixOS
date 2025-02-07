@@ -5,11 +5,40 @@
 { inputs, config, pkgs, ... }:
 
 {
+  # change kernel
+  boot.kernelpackages = pkgs.linuxKernel.packaages.linux_zen;
+
   nix = {
     settings = {
+      auto-optimise-store = true; # Nix storeの最適化
       experimental-features = ["nix-command" "flakes"];
     };
+    # ガベージコレクションを自動実行
+    gc = {
+      automatic = true;
+      dates = "weekly";
+      options = "--deleate-older-than 7d";
+    };
   };
+
+  # プロプライエタリなパッケージを許可する
+  nixpkgs.config.allowUnfree = true;
+
+  # tailscaleを有効化
+  services.tailscale.enable = true;
+  networking.firewall = {
+    enable = true;
+    # tailscaleの仮想NICを信頼する
+    # `<Tailscaleのホスト名>:<ポート番号>`のアクセスが可能になる
+    trustedInterfaces = ["tailscale0"];
+    allowedUDPPorts = [config.services.tailscale.port];
+  };
+
+  # Linuxデスクトップ向けのパッケージマネージャー
+  # アプリケーションをサンドボックス化して実行する
+  # NixOSが対応していないアプリのインストールに使う
+  services.flatpak.enable = true;
+  xdg.portal.enable = true;
 
   imports =
     [ # Include the results of the hardware scan.
