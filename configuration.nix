@@ -210,6 +210,10 @@
   brave
   warp-terminal
   vscode
+  fastfetch
+  discord
+  gh
+  jetbrains.rust-rover
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
