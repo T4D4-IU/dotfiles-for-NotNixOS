@@ -38,7 +38,7 @@
 	    remap = {
 	      CapasLock = "Ctrl_L";
 	    };
-	  };
+	  }
 	];
 	keymap = [
 	  {
