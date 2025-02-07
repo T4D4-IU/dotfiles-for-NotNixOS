@@ -2,7 +2,7 @@
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
-{ config, pkgs, ... }:
+{ inputs, config, pkgs, ... }:
 
 {
   nix = {
@@ -14,7 +14,46 @@
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
-    ];
+    ]
+    # 環境に応じてインポートするモジュールを変更
+    ++ (with inputs.nixos-hardware.nixosModules; [
+      common-cpu-amd
+      common-gpu-nvidia
+      common-pc-ssd
+    ]);
+    # xremapのNixOS modulesを使えるようにする
+    ++ [
+    inputs.xremap.nixosModules.default
+    ]
+    # xremapでキー設定をいい感じに変更
+    service.xremap = {
+      userName = "Asaki";
+      serviceMode = "system";
+      config = {
+        modmap = [
+	  {
+	    # CapsLockをCtrlに置換
+	    name = "CapasLock is dead";
+	    remap = {
+	      CapasLock = "Ctrl_L";
+	    };
+	  };
+	];
+	keymap = [
+	  {
+	    # Ctrl + HがどのアプリケーションでもBackSpaceになるように変更
+	    name = "Ctrl+H should be enabled on all apps as BackSpace"
+	    remap = {
+	      C-h = "Backspace";
+	    };
+	    # 一部アプリケーションを対象から除外
+	    application = {
+	      not = ["Alacritty" "Kitty" "Wezterm"];
+	    };
+	  }
+	];
+      };
+    };
 
   # Bootloader.
   boot.loader.grub.enable = true;
