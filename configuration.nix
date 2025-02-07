@@ -17,7 +17,7 @@
     gc = {
       automatic = true;
       dates = "weekly";
-      options = "--deleate-older-than 7d";
+      options = "--delete-older-than 7d";
     };
   };
 
