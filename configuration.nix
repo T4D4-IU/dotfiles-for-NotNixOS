@@ -24,7 +24,7 @@
     # xremapのNixOS modulesを使えるようにする
     ++ [
     inputs.xremap.nixosModules.default
-    ]
+    ];
 
     # xremapでキー設定をいい感じに変更
     services.xremap = {
