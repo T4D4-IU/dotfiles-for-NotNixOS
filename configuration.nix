@@ -26,35 +26,35 @@
     inputs.xremap.nixosModules.default
     ];
 
-    # xremapでキー設定をいい感じに変更
-    services.xremap = {
-      userName = "Asaki";
-      serviceMode = "system";
-      config = {
-        modmap = [
-	  {
-	    # CapsLockをCtrlに置換
-	    name = "CapsLock is dead";
-	    remap = {
-	      CapsLock = "Ctrl_L";
-	    };
-	  }
-	];
-	keymap = [
-	  {
-	    # Ctrl + HがどのアプリケーションでもBackSpaceになるように変更
-	    name = "Ctrl+H should be enabled on all apps as BackSpace";
-	    remap = {
-	      C-h = "Backspace";
-	    };
-	    # 一部アプリケーションを対象から除外
-	    application = {
-	      not = ["Alacritty" "Kitty" "Wezterm"];
-	    };
-	  }
-	];
-      };
+  # xremapでキー設定をいい感じに変更
+  services.xremap = {
+    userName = "Asaki";
+    serviceMode = "system";
+    config = {
+      modmap = [
+        {
+	  # CapsLockをCtrlに置換
+	  name = "CapsLock is dead";
+	  remap = {
+	    CapsLock = "Ctrl_L";
+	  };
+	}
+      ];
+      keymap = [
+        {
+	  # Ctrl + HがどのアプリケーションでもBackSpaceになるように変更
+	  name = "Ctrl+H should be enabled on all apps as BackSpace";
+	  remap = {
+	    C-h = "Backspace";
+	  };
+	  # 一部アプリケーションを対象から除外
+	  application = {
+	    not = ["Alacritty" "Kitty" "Wezterm"];
+	  };
+	}
+      ];
     };
+  };
 
   # Bootloader.
   boot.loader.grub.enable = true;
