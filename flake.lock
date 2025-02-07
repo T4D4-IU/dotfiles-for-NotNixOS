@@ -426,7 +426,7 @@
         "type": "github"
       }
     },
-    "nixos-harware": {
+    "nixos-hardware": {
       "locked": {
         "lastModified": 1738816619,
         "narHash": "sha256-5yRlg48XmpcX5b5HesdGMOte+YuCy9rzQkJz+imcu6I=",
@@ -576,7 +576,7 @@
     },
     "root": {
       "inputs": {
-        "nixos-harware": "nixos-harware",
+        "nixos-hardware": "nixos-hardware",
         "nixpkgs": "nixpkgs",
         "xremap": "xremap"
       }
