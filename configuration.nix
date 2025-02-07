@@ -6,7 +6,7 @@
 
 {
   # change kernel
-  boot.kernelpackages = pkgs.linuxKernel.packaages.linux_zen;
+  boot.kernelPackages = pkgs.linuxKernel.packages.linux_zen;
 
   nix = {
     settings = {
