@@ -15,12 +15,6 @@
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
     ]
-    # 環境に応じてインポートするモジュールを変更
-    ++ (with inputs.nixos-hardware.nixosModules; [
-      common-cpu-amd
-      common-gpu-nvidia
-      common-pc-ssd
-    ])
     # xremapのNixOS modulesを使えるようにする
     ++ [
     inputs.xremap.nixosModules.default
