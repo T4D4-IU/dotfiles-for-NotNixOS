@@ -61,7 +61,7 @@
       noto-fonts-emoji
       nerdfonts
     ];
-    fontDir.enable = ture;
+    fontDir.enable = true;
     fontconfig = {
       defalutFonts = {
         serif = ["Noto Serif CJK JP" "Noto Color Emoji"];
