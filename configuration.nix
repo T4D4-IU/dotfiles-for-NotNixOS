@@ -63,7 +63,7 @@
     ];
     fontDir.enable = true;
     fontconfig = {
-      defalutFonts = {
+      defaultFonts = {
         serif = ["Noto Serif CJK JP" "Noto Color Emoji"];
 	sansSerif = ["Noto Sans CJK JP" "Noto Color Eomji"];
 	monospace = ["JetBrainsMono Nerd Font" "Noto Color Emoji"];
