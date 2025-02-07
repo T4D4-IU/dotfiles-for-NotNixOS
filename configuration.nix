@@ -34,16 +34,16 @@
         modmap = [
 	  {
 	    # CapsLockをCtrlに置換
-	    name = "CapasLock is dead";
+	    name = "CapsLock is dead";
 	    remap = {
-	      CapasLock = "Ctrl_L";
+	      CapsLock = "Ctrl_L";
 	    };
 	  }
 	];
 	keymap = [
 	  {
 	    # Ctrl + HがどのアプリケーションでもBackSpaceになるように変更
-	    name = "Ctrl+H should be enabled on all apps as BackSpace"
+	    name = "Ctrl+H should be enabled on all apps as BackSpace";
 	    remap = {
 	      C-h = "Backspace";
 	    };
