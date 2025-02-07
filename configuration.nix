@@ -20,11 +20,12 @@
       common-cpu-amd
       common-gpu-nvidia
       common-pc-ssd
-    ]);
+    ])
     # xremapのNixOS modulesを使えるようにする
     ++ [
     inputs.xremap.nixosModules.default
     ]
+
     # xremapでキー設定をいい感じに変更
     service.xremap = {
       userName = "Asaki";
