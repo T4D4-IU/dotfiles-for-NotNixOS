@@ -209,7 +209,6 @@
   #  wget
   brave
   warp-terminal
-  # vscode
   fastfetch
   discord
   gh
