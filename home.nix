@@ -1,7 +1,7 @@
 {
   home = rec {
     username="Asaki";
-    homeDirectory = "/home/${username}"
+    homeDirectory = "/home/${username}";
     stateVersion = "22.11";
   };
   programs.home-manager.enable = true;
