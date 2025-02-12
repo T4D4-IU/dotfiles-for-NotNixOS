@@ -214,6 +214,7 @@
   gh
   jetbrains.rust-rover
   direnv
+  nix-direnv
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
