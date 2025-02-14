@@ -50,3 +50,7 @@
 - copilot
 - [dash](https://github.com/dlvhdr/gh-dash)
 - [poi](https://github.com/seachicken/gh-poi)
+
+#### 分割したファイルの詳細
+- [direnv.nix](./direnv.nix) #direnvの設定
+- [development.nix](./development.nix) #開発環境の設定
