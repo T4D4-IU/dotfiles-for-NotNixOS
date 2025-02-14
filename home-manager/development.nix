@@ -15,6 +15,7 @@
         ];
     })
     vscode
+    jetbrains-toolbox
     zenn-cli
     wakatime-cli
   ];
