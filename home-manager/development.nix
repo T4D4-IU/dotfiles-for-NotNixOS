@@ -14,6 +14,7 @@
             # "wasm32-wasi" # 最新のStable版ではサポートされていない？
         ];
     })
+    cargo-shuttle
     vscode
     jetbrains-toolbox
     zenn-cli
