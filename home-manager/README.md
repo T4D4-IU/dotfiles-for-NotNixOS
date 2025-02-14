@@ -11,6 +11,7 @@
 - https://zenn.dev/asa1984/articles/nixos-is-the-best#home.file
 - https://zenn.dev/kuu/articles/20250204_introduce-home-manager
 - https://wonderwall.hatenablog.com/entry/rust-command-line-tools
+- https://yiskw713.hatenablog.com/entry/2022/01/16/010000#%E4%BD%BF%E3%81%84%E6%96%B9
 
 ### インストール済みパッケージリスト
 - brave
@@ -41,6 +42,8 @@
 - [grex](https://github.com/pemistahl/grex) # generate regular expression
 - [silicon](https://github.com/Aloxaf/silicon) # create beautiful image of source code
 - [fzf](https://github.com/junegunn/fzf) # A command-line fuzzy finder
+- [zenn-cli](https://github.com/zenn-dev/zenn-editor/tree/canary/packages/zenn-cli) # CLI tool for Zenn
+- [wakatime-cli](https://wakatime.com/dashboard) # CLI tool for Wakatime
 
 #### GitHub CLI extensions
 - markdown-preview

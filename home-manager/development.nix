@@ -14,5 +14,7 @@
         ];
     })
     vscode
+    zenn-cli
+    wakatime-cli
   ];
 }
