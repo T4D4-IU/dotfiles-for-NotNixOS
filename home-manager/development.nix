@@ -15,6 +15,8 @@
         ];
     })
     cargo-shuttle
+    cargo-llvm-cov # Rustのカバレッジ計測ツール
+    cargo-binutils #cargo-llvm-covに使う
     vscode
     jetbrains-toolbox
     zenn-cli
