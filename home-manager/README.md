@@ -45,6 +45,7 @@
 - [zenn-cli](https://github.com/zenn-dev/zenn-editor/tree/canary/packages/zenn-cli) # CLI tool for Zenn
 - [wakatime-cli](https://wakatime.com/dashboard) # CLI tool for Wakatime
 - [ghq](https://github.com/x-motemen/ghq) # Remote repository management made easy
+- [lazygit](https://github.com/jesseduffield/lazygit) # simple terminal UI for git commands
 
 #### GitHub CLI extensions
 - markdown-preview
