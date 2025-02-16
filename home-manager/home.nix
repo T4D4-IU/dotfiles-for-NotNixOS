@@ -49,7 +49,6 @@
       top = "btm";
       diff = "delta";
       find = "fd";
-      lg = "lazygit";
     };
   };
 
