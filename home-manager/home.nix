@@ -26,6 +26,19 @@
     enableZshIntegration = true;
   };
 
+  programs.neovim = {
+    extraPackages = with pkgs; [
+      lua-language-server
+      bash-language-server
+      nodePackages.typescript-language-server
+      vim-language-server
+      nixfmt-rfc-style
+    ];
+    plugins = with pkgs.vimPlugins; [
+      lazy-nvim
+    ];
+  };
+
   programs.zsh = {
     enable = true;
     autocd = true;

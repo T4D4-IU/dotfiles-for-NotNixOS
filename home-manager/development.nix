@@ -18,7 +18,6 @@
     cargo-llvm-cov # Rustのカバレッジ計測ツール
     cargo-binutils #cargo-llvm-covに使う
     vscode
-    vimPlugins.LazyVim
     jetbrains-toolbox
     zenn-cli
     wakatime-cli
