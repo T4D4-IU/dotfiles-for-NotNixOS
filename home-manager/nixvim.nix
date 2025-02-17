@@ -5,20 +5,28 @@
   programs.nixvim = {
     enable = true;
 
-    # 例: colorscheme とプラグインの有効化
-    colorschemes.gruvbox.enable = true;
-    plugins.lualine.enable = true;
-
-    # オプション設定 (例: 行番号の表示)
+    autoCmd = [
+        # 自動でコマンドを実行
+    ];
     opts = {
-      number = true;
-      relativenumber = true;
-      shiftwidth = 2;
-    };
+        relativenumber = true;
+        number = true;
+        undofile = true;
+        swapfile = false;
+        incsearch = true;
+        cursorline = true;
 
-    # その他、追加の Lua 設定なども可能
-    extraConfigLua = ''
-      print("Welcome to Neovim configured by nixvim!")
-    '';
+        tabstop = 4;
+        shiftwidth = 4;
+        expandtab = true;
+        autoindent = true;
+
+        textwidth = 0;
+    };
+    plugins = {
+        lazygit = {
+            enable = true;
+        };
+    };
   };
 }
