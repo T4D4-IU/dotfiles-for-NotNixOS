@@ -1,13 +1,8 @@
 { config, pkgs, ... }:
 
 {
-  # nixvim モジュールを利用して Neovim を設定
   programs.nixvim = {
     enable = true;
-
-    autoCmd = [
-        # 自動でコマンドを実行
-    ];
     opts = {
         relativenumber = true;
         number = true;
@@ -22,11 +17,6 @@
         autoindent = true;
 
         textwidth = 0;
-    };
-    plugins = {
-        lazygit = {
-            enable = true;
-        };
     };
   };
 }
