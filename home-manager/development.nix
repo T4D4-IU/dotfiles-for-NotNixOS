@@ -25,7 +25,5 @@
     ghq # Remote repository management made easy
     lazygit # Simple terminal UI for git commands
     gibo # Gitignore boilerplate generator
-    nix-linter
-    nixpkgs-fmt
   ];
 }
