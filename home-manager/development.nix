@@ -19,6 +19,7 @@
     cargo-binutils #cargo-llvm-covに使う
     vscode
     jetbrains-toolbox
+    ghostty
     zenn-cli
     wakatime-cli
     ghq # Remote repository management made easy
