@@ -16,16 +16,16 @@
 
   outputs = inputs: {
       nixosConfigurations = {
-	myNixOS = inputs.nixpkgs.lib.nixosSystem {
-	  system = "x86_64-linux";
-	  modules = [
-	    ./configuration.nix
-	];
-	specialArgs = {
-	  inherit inputs;
-	};
-      };
-    };
+        myNixOS = inputs.nixpkgs.lib.nixosSystem {
+          system = "x86_64-linux";
+          modules = [
+            ./configuration.nix
+            ];
+          specialArgs = {
+            inherit inputs;
+            };
+          };
+        };
       homeConfigurations = {
       myHome = inputs.home-manager.lib.homeManagerConfiguration {
         pkgs = import inputs.nixpkgs {
@@ -36,7 +36,13 @@
           inherit inputs;
         };
         modules = [
-        ./home.nix
+          ./home.nix
+          inputs.nixvim.homeManagerModule.nixvim
+          {
+            programs.nixvim = {
+              enable = true;
+            };
+          }
         ];
       };
     };
