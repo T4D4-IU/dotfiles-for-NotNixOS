@@ -30,7 +30,6 @@
         # the path to your home.nix.
         modules = [
           ./home.nix
-          nixvim.homeManagerModules.nixvim
           ];
 
         # Optionally use extraSpecialArgs
