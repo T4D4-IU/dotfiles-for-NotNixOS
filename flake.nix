@@ -37,12 +37,7 @@
         };
         modules = [
           ./home.nix
-          inputs.nixvim.homeManagerModule.nixvim
-          {
-            programs.nixvim = {
-              enable = true;
-            };
-          }
+          inputs.nixvim.homeManagerModules.nixvim
         ];
       };
     };
