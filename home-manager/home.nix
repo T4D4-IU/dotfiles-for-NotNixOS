@@ -50,9 +50,9 @@
       diff = "delta";
       find = "fd";
       vim = "nix run 'github:elythh/nixvim'";
+      lg = "lazygit";
     };
   };
-
 
   # The home.packages option allows you to install Nix packages into your
   # environment.
