@@ -49,7 +49,7 @@
       top = "btm";
       diff = "delta";
       find = "fd";
-      vim = "nix run 'github:elythh/nixvim";
+      vim = "nix run 'github:elythh/nixvim'";
     };
   };
 
