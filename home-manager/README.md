@@ -6,6 +6,7 @@
 - パッケージのオプションはprogramsを利用して設定する。
 - 更新後 `home-manager switch`を実行して適用する。
 - nix言語の文法に問題があるかは`nix-instantiate --parse <filename>`で確認できる。
+- aliasを設定する場合、aliasの設定とhome.packagesへの追加は同じファイル内じゃないといけなさそう(?)
 
 ### 参考リンク
 - https://zenn.dev/asa1984/articles/nixos-is-the-best#home.file
