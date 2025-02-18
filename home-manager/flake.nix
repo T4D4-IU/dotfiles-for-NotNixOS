@@ -30,7 +30,7 @@
         # the path to your home.nix.
         modules = [
           ./home.nix
-          inputs.nixvim.homeManagerModules.nixvim
+          nixvim.homeManagerModules.nixvim
           {
             programs.nixvim.enable = true;
           }
