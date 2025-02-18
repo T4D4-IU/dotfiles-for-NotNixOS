@@ -57,3 +57,6 @@
 #### 分割したファイルの詳細
 - [direnv.nix](./direnv.nix) #direnvの設定
 - [development.nix](./development.nix) #開発環境の設定
+
+#### お借りした設定
+- [elythh/nixvim](https://neovimcraft.com/plugin/elythh/nixvim/)
