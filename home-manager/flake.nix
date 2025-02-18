@@ -31,9 +31,6 @@
         modules = [
           ./home.nix
           nixvim.homeManagerModules.nixvim
-          {
-            programs.nixvim.enable = true;
-          }
           ];
 
         # Optionally use extraSpecialArgs
