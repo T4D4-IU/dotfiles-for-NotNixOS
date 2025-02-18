@@ -19,7 +19,6 @@
   imports = [
     ./direnv.nix
     ./development.nix
-    ./nixvim.nix
   ];
 
   programs.zoxide = {
