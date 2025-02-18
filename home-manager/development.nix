@@ -23,7 +23,6 @@
     zenn-cli
     wakatime-cli
     ghq # Remote repository management made easy
-    lazygit # Simple terminal UI for git commands
     gibo # Gitignore boilerplate generator
   ];
 }
