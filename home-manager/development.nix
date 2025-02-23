@@ -7,6 +7,8 @@
     # nodePackages.wrangler # Cloudflare Workers CLI
     deno
     bun
+    postman
+    foundry
     wasmer # ユニバーサルWebAssemblyランタイム
     (rust-bin.stable.latest.default.override {
         targets = [
