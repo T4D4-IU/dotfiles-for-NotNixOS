@@ -48,6 +48,7 @@
 - [ghq](https://github.com/x-motemen/ghq) # Remote repository management made easy
 - [lazygit](https://github.com/jesseduffield/lazygit) # simple terminal UI for git commands
 - [gibo](https://github.com/simonwhitaker/gibo) # create .gitignore file
+- [yazi](https://github.com/sxyazi/yazi) # 💥 Blazing fast terminal file manager written in Rust, based on async I/O.
 
 #### GitHub CLI extensions
 - markdown-preview
