@@ -49,6 +49,8 @@
 - [lazygit](https://github.com/jesseduffield/lazygit) # simple terminal UI for git commands
 - [gibo](https://github.com/simonwhitaker/gibo) # create .gitignore file
 - [yazi](https://github.com/sxyazi/yazi) # 💥 Blazing fast terminal file manager written in Rust, based on async I/O.
+- [tmux](https://github.com/tmux/tmux) # terminal multiplexer
+- [ncspot](https://github.com/hrkfdn/ncspot) # Cross-platform ncurses Spotify client written in Rust
 
 #### GitHub CLI extensions
 - markdown-preview
