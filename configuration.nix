@@ -40,6 +40,17 @@
   services.flatpak.enable = true;
   xdg.portal.enable = true;
 
+  # Enable Docker
+  virtualisation = {
+    docker = {
+      enable = true;
+      rootless = {
+        enable = true;
+        setSocketVariable = true; # $DOCKER_HOSTを設定
+      };
+    };
+  };
+
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
