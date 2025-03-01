@@ -51,6 +51,7 @@
 - [yazi](https://github.com/sxyazi/yazi) # 💥 Blazing fast terminal file manager written in Rust, based on async I/O.
 - [tmux](https://github.com/tmux/tmux) # terminal multiplexer
 - [ncspot](https://github.com/hrkfdn/ncspot) # Cross-platform ncurses Spotify client written in Rust
+- [valgrind](https://valgrind.org/) # memory debugging and profiling tool
 
 #### GitHub CLI extensions
 - markdown-preview

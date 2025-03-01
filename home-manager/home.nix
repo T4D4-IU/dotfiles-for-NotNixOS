@@ -90,6 +90,7 @@
     yazi # terminal file manager
     tmux # terminal multiplexer
     ncspot # Cross-platform ncurses Spotify client
+    valgrind # memory leak detector
 
     # # It is sometimes useful to fine-tune packages, for example, by applying
     # # overrides. You can do that directly here, just don't forget the
