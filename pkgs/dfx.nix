@@ -1,8 +1,11 @@
 { stdenv, fetchurl }:
 
+let
+  version = "0.25.0"; # バージョンを変数として定義
+in
 stdenv.mkDerivation {
   pname = "dfx";
-  version = "0.25.0";
+  inherit  version; # バージョンを継承
 
   src = fetchurl {
     url = "https://github.com/dfinity/sdk/releases/tag/${version}/dfx-${version}-linux.tar.gz";
