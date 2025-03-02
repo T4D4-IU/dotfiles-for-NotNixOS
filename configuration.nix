@@ -62,7 +62,7 @@
 
   # xremapでキー設定をいい感じに変更
   services.xremap = {
-    userName = "Asaki";
+    userName = "asaki";
     serviceMode = "system";
     config = {
       modmap = [
@@ -141,7 +141,7 @@
     fontconfig = {
       defaultFonts = {
         serif = ["Noto Serif CJK JP" "Noto Color Emoji"];
-	sansSerif = ["Noto Sans CJK JP" "Noto Color Eomji"];
+	sansSerif = ["Noto Sans CJK JP" "Noto Color Emoji"];
 	monospace = ["JetBrainsMono Nerd Font" "Noto Color Emoji"];
 	emoji = ["Noto Color Emoji"];
       };
