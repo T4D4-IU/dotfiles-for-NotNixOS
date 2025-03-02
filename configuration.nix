@@ -154,16 +154,6 @@
   };
   programs.hyprlock.enable = true;
 
-  services.greetd = {
-    enable = true;
-    settings = {
-      default_session = {
-        command = "${pkgs.greetd.tuigreet}/bin/tuigreet --time --cmd Hyprland";
-        user = "greeter";
-      };
-    };
-  };
-
   # Enable the X11 windowing system.
   services.xserver.enable = true;
 
@@ -237,7 +227,6 @@
   #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
   #  wget
   kitty
-  greetd.tuigreet
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
