@@ -19,7 +19,7 @@
   imports = [
     ./direnv.nix
     ./development.nix
-    ./hyprland.nix
+    # ./hyprland.nix
   ];
 
   programs.zoxide = {
