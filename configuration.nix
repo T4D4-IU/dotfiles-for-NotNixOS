@@ -151,6 +151,7 @@
   programs.hyprland = {
     enable = true;
     xwayland.enable = true;
+    systemd.enable = true;
   };
   programs.hyprlock.enable = true;
 
@@ -162,6 +163,24 @@
         user = "greeter";
       };
     };
+  };
+
+  xdg.portal = {
+    enable = true;
+    extraPortals = with pkgs; [
+      xdg-desktop-portal-hyprland
+      xdg-desktop-portal-gtk
+    ];
+    configPackages = [ pkgs.hyprland ];
+  };
+
+  # 環境変数の追加
+  environment.sessionVariables = {
+    NIXOS_OZONE_WL = "1"; # Electronアプリを自動的にWaylandモードにする
+    WLR_NO_HARDWARE_CURSORS = "1"; # 仮想環境での問題回避
+    XDG_SESSION_TYPE = "wayland";
+    XDG_CURRENT_DESKTOP = "Hyprland";
+    XDG_SESSION_DESKTOP = "Hyprland";
   };
 
   # Enable the X11 windowing system.
@@ -243,6 +262,14 @@
   swww
   wl-clipboard
   xdg-desktop-portal-hyprland
+  xdg-desktop-portal-gtk
+  libsForQt5.qt5.qtwayland # Qt5のWaylandサポート
+  qt6.qtwayland # Qt6のWaylandサポート
+  polkit-kde-agent # 認証エージェント
+  gnome.adwaita-icon-theme # アイコンテーマ
+  glib # gsettingsが必要
+  grim # スクリーンショット
+  slurp # スクリーン領域選択
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
