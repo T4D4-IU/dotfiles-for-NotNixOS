@@ -38,7 +38,7 @@
   # アプリケーションをサンドボックス化して実行する
   # NixOSが対応していないアプリのインストールに使う
   services.flatpak.enable = true;
-  xdg.portal.enable = true;
+  # xdg.portal.enable = true;
 
   # Enable Docker
   virtualisation = {
