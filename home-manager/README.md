@@ -6,7 +6,7 @@
 - パッケージのオプションはprogramsを利用して設定する。
 - 更新後 `home-manager switch`を実行して適用する。
 - nix言語の文法に問題があるかは`nix-instantiate --parse <filename>`で確認できる。
-- aliasを設定する場合、aliasの設定とhome.packagesへの追加は同じファイル内じゃないといけなさそう(?)
+- aliasを設定する場合、aliasの設定とhome.packagesへの追加は同じファイル内じゃないといけなさそう（?）
 
 ### 参考リンク
 - https://zenn.dev/asa1984/articles/nixos-is-the-best#home.file
@@ -52,6 +52,13 @@
 - [tmux](https://github.com/tmux/tmux) # terminal multiplexer
 - [ncspot](https://github.com/hrkfdn/ncspot) # Cross-platform ncurses Spotify client written in Rust
 - [valgrind](https://valgrind.org/) # memory debugging and profiling tool
+- [ctop](https://ctop.sh/) #Top-like interface for container metrics
+- [oha](https://github.com/hatoo/oha) # HTTP load generator inspired by rakyll/hey with tui animation
+- [lolcat](https://github.com/busyloop/lolcat) # Rainbow version of cat
+- [termdown](https://github.com/trehn/termdown) # Starts a countdown to or from TIMESPEC
+- [neo-cowsay](https://github.com/Code-Hex/Neo-cowsay) # Cowsay reborn, written in Go
+- [gping](https://github.com/orf/gping) # ping, but with a graph
+- [sl](http://www.tkl.iis.u-tokyo.ac.jp/~toyoda/index_e.html) # Steam Locomotive runs across your terminal when you type 'sl'
 
 #### GitHub CLI extensions
 - markdown-preview

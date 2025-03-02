@@ -91,6 +91,13 @@
     tmux # terminal multiplexer
     ncspot # Cross-platform ncurses Spotify client
     valgrind # memory leak detector
+    ctop # Top-like interface for container metrics
+    oha # HTTP load generator inspired by rakyll/hey with tui animation
+    lolcat # Rainbow version of cat
+    termdown # Starts a countdown to or from TIMESPEC
+    neo-cowsay # Cowsay reborn, written in Go
+    gping # Ping, but with a graph
+    sl # Steam Locomotive runs across your terminal when you type 'sl'
 
     # # It is sometimes useful to fine-tune packages, for example, by applying
     # # overrides. You can do that directly here, just don't forget the
