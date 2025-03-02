@@ -148,21 +148,24 @@
     };
   };
   # Hyprkandyの有効化
-  programs.hyprland.enable = true;
+  programs.hyprland = {
+    enable = true;
+    xwayland.enable = true;
+  };
   programs.hyprlock.enable = true;
 
   # Enable the X11 windowing system.
-  services.xserver.enable = true;
+  services.xserver.enable = false;
 
   # Enable the GNOME Desktop Environment.
-  services.xserver.displayManager.gdm.enable = true;
-  services.xserver.desktopManager.gnome.enable = true;
+  #services.xserver.displayManager.gdm.enable = true;
+  #services.xserver.desktopManager.gnome.enable = true;
 
   # Configure keymap in X11
-  services.xserver.xkb = {
-    layout = "jp";
-    variant = "";
-  };
+  #services.xserver.xkb = {
+  #  layout = "jp";
+  #  variant = "";
+  #};
 
   # Enable CUPS to print documents.
   services.printing.enable = true;
