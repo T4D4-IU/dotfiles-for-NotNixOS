@@ -238,6 +238,11 @@
   #  wget
   kitty
   greetd.tuigreet
+  waybar
+  dunst
+  swww
+  wl-clipboard
+  xdg-desktop-portal-hyprland
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
