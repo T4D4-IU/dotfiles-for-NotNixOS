@@ -38,7 +38,7 @@
   # アプリケーションをサンドボックス化して実行する
   # NixOSが対応していないアプリのインストールに使う
   services.flatpak.enable = true;
-  # xdg.portal.enable = true;
+  xdg.portal.enable = true;
 
   # Enable Docker
   virtualisation = {
@@ -147,54 +147,21 @@
       };
     };
   };
-  # Hyprlandの有効化
-  programs.hyprland = {
-    enable = true;
-    xwayland.enable = true;
-  };
-  programs.hyprlock.enable = true;
 
-  services.greetd = {
-    enable = true;
-    settings = {
-      default_session = {
-        command = "${pkgs.greetd.tuigreet}/bin/tuigreet --time --cmd Hyprland";
-        user = "greeter";
-      };
-    };
-  };
-
-  xdg.portal = {
-    enable = true;
-    extraPortals = with pkgs; [
-      xdg-desktop-portal-hyprland
-      xdg-desktop-portal-gtk
-    ];
-    configPackages = [ pkgs.hyprland ];
-  };
-
-  # 環境変数の追加
-  environment.sessionVariables = {
-    NIXOS_OZONE_WL = "1"; # Electronアプリを自動的にWaylandモードにする
-    WLR_NO_HARDWARE_CURSORS = "1"; # 仮想環境での問題回避
-    XDG_SESSION_TYPE = "wayland";
-    XDG_CURRENT_DESKTOP = "Hyprland";
-    XDG_SESSION_DESKTOP = "Hyprland";
-  };
 
   # Enable the X11 windowing system.
-  services.xserver.enable = false;
+  services.xserver.enable = true;
 
   # Enable the GNOME Desktop Environment.
-  #services.xserver.displayManager.gdm.enable = true;
-  #services.xserver.desktopManager.gnome.enable = true;
+  services.xserver.displayManager.gdm.enable = true;
+  services.xserver.desktopManager.gnome.enable = true;
 
 
   # Configure keymap in X11
-  #services.xserver.xkb = {
-  #  layout = "jp";
-  #  variant = "";
-  #};
+  services.xserver.xkb = {
+    layout = "jp";
+    variant = "";
+  };
 
   # Enable CUPS to print documents.
   services.printing.enable = true;
@@ -254,21 +221,6 @@
   environment.systemPackages = with pkgs; [
   #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
   #  wget
-  kitty
-  greetd.tuigreet
-  waybar
-  dunst
-  swww
-  wl-clipboard
-  xdg-desktop-portal-hyprland
-  xdg-desktop-portal-gtk
-  libsForQt5.qt5.qtwayland # Qt5のWaylandサポート
-  qt6.qtwayland # Qt6のWaylandサポート
-  polkit-kde-agent # 認証エージェント
-  gnome.adwaita-icon-theme # アイコンテーマ
-  glib # gsettingsが必要
-  grim # スクリーンショット
-  slurp # スクリーン領域選択
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
