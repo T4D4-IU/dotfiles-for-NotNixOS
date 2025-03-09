@@ -30,13 +30,12 @@
     enable = true;
     settings = {
       theme = "catppuccin-mocha";
-      window-padding-x = 20;
+      window-padding-x = 10;
       window-padding-y = 5;
       window-padding-balance = true;
       background-opacity = 0.85;
       background-blur-radius = 20;
-      window-startup-mode = "maximized";
-      window-save-state = true;
+      fullscreen = true;
     };
   };
 }
