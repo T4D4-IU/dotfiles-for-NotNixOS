@@ -33,7 +33,6 @@
       window-padding-x = 20;
       window-padding-y = 5;
       window-padding-balance = true;
-      window-theme = ghostty;
       background-opacity = 0.85;
       background-blur-radius = 20;
       window-startup-mode = "maximized";
