@@ -21,10 +21,23 @@
     cargo-binutils #cargo-llvm-covに使う
     vscode
     jetbrains-toolbox
-    ghostty
     zenn-cli
     wakatime-cli
     ghq # Remote repository management made easy
     gibo # Gitignore boilerplate generator
   ];
+  programs.ghostty = {
+    enable = true;
+    settiings = {
+      theme = "catppuccin-mocha";
+      window-padding-x = 20;
+      window-padding-y = 5;
+      window-padding-balance = true;
+      window-theme = ghostty;
+      background-opacity = 0.85;
+      background-blur-radius = 20;
+      window-startup-mode = "maximized";
+      window-save-state = true;
+    };
+  };
 }
