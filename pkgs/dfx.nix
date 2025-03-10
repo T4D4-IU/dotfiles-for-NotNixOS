@@ -1,4 +1,4 @@
-{ stdenv, fetchurl }:
+{ stdenv, fetchzip }:
 
 let
   version = "0.25.0"; # バージョンを変数として定義
@@ -7,16 +7,8 @@ stdenv.mkDerivation {
   pname = "dfx";
   inherit  version; # バージョンを継承
 
-  src = fetchurl {
-    url = "https://github.com/dfinity/sdk/releases/tag/${version}/dfx-${version}-linux.tar.gz";
-    sha256 = ""; # SHA-256 ハッシュ
-  };
-
-  buildInputs = [ ];
-
-  meta = {
-    description = "The DFINITY Canister SDK";
-    homepage = "https://internetcomputer.org";
-    license = stdenv.lib.licenses.mit;
+  src = fetchzip {
+    url = "https://github.com/dfinity/sdk/releases/download/${version}/dfx-${version}-x86_64-linux.tar.gz";
+    sha256 = "OWqmvgMd2dT8rSlrrLtfmNm1/sjYa1h6+AbpX7uWdnk="; # SHA-256 ハッシュ
   };
 }
