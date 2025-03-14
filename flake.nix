@@ -1,40 +1,35 @@
 {
-  description = "A very basic flake";
+  description = "Home Manager configuration of asaki";
 
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
-    xremap.url = "github:xremap/nix-flake";
+    # Specify the source of Home Manager and Nixpkgs.
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    rust-overlay.url = "github:oxalica/rust-overlay";
   };
 
-  outputs = inputs: {
-      nixosConfigurations = {
-        myNixOS = inputs.nixpkgs.lib.nixosSystem {
-          system = "x86_64-linux";
-          modules = [
-            ./configuration.nix
-            ];
-          specialArgs = {
-            inherit inputs;
-            };
-          };
-        };
-      homeConfigurations = {
-      myHome = inputs.home-manager.lib.homeManagerConfiguration {
-        pkgs = import inputs.nixpkgs {
-          system = "x86_64-linux";
-          config.allowUnfree = true; # プロプライエタリなパッケージを許可
-        };
-        extraSpecialArgs = {
-          inherit inputs;
-        };
+  outputs = { nixpkgs, home-manager, rust-overlay, ... }:
+    let
+      system = "x86_64-linux";
+      pkgs = import nixpkgs {
+        inherit system;
+        overlays = [ (import rust-overlay) ];
+      };
+    in {
+      homeConfigurations."asaki" = home-manager.lib.homeManagerConfiguration {
+        inherit pkgs;
+
+        # Specify your home configuration modules here, for example,
+        # the path to your home.nix.
         modules = [
           ./home.nix
-        ];
+          ];
+
+        # Optionally use extraSpecialArgs
+        # to pass through arguments to home.nix
       };
     };
-  };
 }
