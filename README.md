@@ -1,4 +1,7 @@
 # Home-manager
+## このレポジトリについて
+- このレポジトリはdotfilesをUbuntuなどの非NixOSで使用しようとすると色々と問題が発生するのでクローンして別のレポジトリ(ここ)に付け替えて色々と調整したもの。多分今後色々と本家と違いが出て来ると思われる。
+
 ### memo
 - パッケージは[Nixpkgs](https://search.nixos.org/packages?query=)から探す。
 - 入れ方は[home.nix](./home.nix)のhome.packagesに追加する。
