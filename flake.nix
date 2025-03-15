@@ -19,7 +19,7 @@
         overlays = [ (import rust-overlay) ];
       };
     in {
-      homeConfigurations."asaki" = home-manager.lib.homeManagerConfiguration {
+      homeConfigurations."t4d4" = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
 
         # Specify your home configuration modules here, for example,
