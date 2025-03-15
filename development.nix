@@ -19,23 +19,9 @@
     cargo-shuttle
     cargo-llvm-cov # Rustのカバレッジ計測ツール
     cargo-binutils #cargo-llvm-covに使う
-    vscode
-    jetbrains-toolbox
     zenn-cli
     wakatime-cli
     ghq # Remote repository management made easy
     gibo # Gitignore boilerplate generator
   ];
-  programs.ghostty = {
-    enable = true;
-    settings = {
-      theme = "catppuccin-mocha";
-      window-padding-x = 10;
-      window-padding-y = 5;
-      window-padding-balance = true;
-      background-opacity = 0.85;
-      background-blur-radius = 20;
-      fullscreen = true;
-    };
-  };
 }
