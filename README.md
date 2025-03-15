@@ -7,7 +7,8 @@
 - 入れ方は[home.nix](./home.nix)のhome.packagesに追加する。
 - パッケージのオプションの有無は[Home Manager Option Search](https://home-manager-options.extranix.com/?query=&release=release-24.05)から探すことができる。
 - パッケージのオプションはprogramsを利用して設定する。
-- 更新後 `home-manager switch`を実行して適用する。
+- 更新後 `home-manager-switch`を実行して適用する。
+  - `home-manager switch --flake /home/t4d4/dotfiles`も可
 - nix言語の文法に問題があるかは`nix-instantiate --parse <filename>`で確認できる。
 - aliasを設定する場合、aliasの設定とhome.packagesへの追加は同じファイル内じゃないといけなさそう（?）
 

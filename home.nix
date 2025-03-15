@@ -56,7 +56,7 @@
       find = "fd";
       vim = "nix run 'github:T4D4-IU/mynixvim'";
       lg = "lazygit";
-      home-manager-switch = "home-manager switch --flake ";
+      home-manager-switch = "home-manager switch --flake /home/t4d4/dotfiles";
     };
   };
 
