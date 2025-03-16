@@ -19,9 +19,7 @@
 - https://yiskw713.hatenablog.com/entry/2022/01/16/010000#%E4%BD%BF%E3%81%84%E6%96%B9
 
 ### インストール済みパッケージリスト
-- brave
 - [fastfetch](https://github.com/fastfetch-cli/fastfetch) # fetch system information
-- discord
 - [omekasy](https://github.com/ikanago/omekasy) # generate dressed up text
 - [teip](https://github.com/greymd/teip) # modern pipeline
 - [marp-cli](https://github.com/marp-team/marp-cli)
@@ -73,12 +71,6 @@
 #### 分割したファイルの詳細
 - [direnv.nix](./direnv.nix) #direnvの設定
 - [development.nix](./development.nix) #開発環境の設定
-
-#### Ghosttyの設定
-- [オプションリファレンス](https://ghostty.org/docs/config/reference#macos-icon-screen-color)
-- [非公式のGUIから設定できるサイト](https://ghostty.zerebos.com/settings/application)
-- [公式の配布しているレポジトリ内のCOnfigファイル](https://github.com/ghostty-org/ghostty/blob/main/src/config/Config.zig)
-- [設定を参考にしたYukiさんのブログ](https://blog-dry.com/entry/2024/12/27/162410)
 
 #### お借りした設定
 - [elythh/nixvim](https://neovimcraft.com/plugin/elythh/nixvim/)
