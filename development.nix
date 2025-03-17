@@ -1,6 +1,5 @@
 {pkgs, ...}: {
   home.packages = with pkgs; [
-    warp-terminal
     gcc
     nodejs-slim # npmのないNode.js単体
     nodePackages.pnpm

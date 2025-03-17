@@ -66,9 +66,7 @@
     # # Adds the 'hello' command to your environment. It prints a friendly
     # # "Hello, world!" when run.
     # pkgs.hello
-    brave
     fastfetch # fetch system information
-    discord
     omekasy # generate dressed up text
     teip # modern pipeline
     marp-cli
