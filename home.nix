@@ -23,12 +23,12 @@
   programs = {
     starship = {
       enable = true;
-    };
-    settings = {
-      add_newline = true;
-      character = {
-        error_symbol = "[➜](bold bright red)";
-        success_symbol = "[➜](bold bright green)";
+      settings = {
+        add_newline = true;
+        character = {
+          error_symbol = "[➜](bold bright red)";
+          success_symbol = "[➜](bold bright green)";
+          };
       };
     };
   };
