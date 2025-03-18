@@ -24,6 +24,13 @@
     starship = {
       enable = true;
     };
+    settings = {
+      add_newline = true;
+      character = {
+        error_symbol = "[➜](bold bright red)";
+        success_symbol = "[➜](bold bright green)";
+      };
+    };
   };
 
   programs.zoxide = {
@@ -102,6 +109,9 @@
     neo-cowsay # Cowsay reborn, written in Go
     gping # Ping, but with a graph
     sl # Steam Locomotive runs across your terminal when you type 'sl'
+    pinact # Pin GitHub Actions versions
+    sniffnet # Cross-platform application to monitor your network traffic with ease
+    atuin # Replacement for a shell history which records additional commands context with optional encrypted synchronization between machines
 
     # # It is sometimes useful to fine-tune packages, for example, by applying
     # # overrides. You can do that directly here, just don't forget the

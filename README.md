@@ -61,6 +61,9 @@
 - [neo-cowsay](https://github.com/Code-Hex/Neo-cowsay) # Cowsay reborn, written in Go
 - [gping](https://github.com/orf/gping) # ping, but with a graph
 - [sl](http://www.tkl.iis.u-tokyo.ac.jp/~toyoda/index_e.html) # Steam Locomotive runs across your terminal when you type 'sl'
+- [pinact](https://github.com/suzuki-shunsuke/pinact) # Pin GitHub Actions versions
+- [sniffnet](https://github.com/gyulyvgc/sniffnet) # Cross-platform application to monitor your network traffic with ease
+- [atuin](https://github.com/atuinsh/atuin) # Replacement for a shell history which records additional commands context with optional encrypted synchronization between machines
 
 #### GitHub CLI extensions
 - markdown-preview
