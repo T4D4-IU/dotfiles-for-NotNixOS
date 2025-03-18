@@ -24,10 +24,30 @@
     starship = {
       enable = true;
       settings = {
-        add_newline = true;
+        format = "$username$hostname$git_branch$git_commit$git_state$git_status$directory$jobs$cmd_duration$character";
+        add_newline = false;
         character = {
           error_symbol = "[➜](bold bright red)";
           success_symbol = "[➜](bold bright green)";
+          };
+          status = {
+            pipestatus = true;
+            format = "[$status]($style) ";
+            style = "white";
+          };
+          username = {
+            style_user = "bright-white bold";
+            style_root = "bright-red bold";
+          };
+          hostname = {
+            style = "bright-green bold";
+            ssh_only = true;
+          };
+          git_state = {
+            style = "bright-purple bold";
+          };
+          git_status = {
+            style = "bright-green bold";
           };
       };
     };
