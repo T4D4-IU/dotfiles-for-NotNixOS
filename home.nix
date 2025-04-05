@@ -84,6 +84,7 @@
       vim = "nix run 'github:T4D4-IU/mynixvim'";
       lg = "lazygit";
       home-manager-switch = "home-manager switch --flake /home/t4d4/dotfiles";
+      dfx = "nix run 'github:T4D4-IU/dotfiles#dfx'";
     };
   };
 
