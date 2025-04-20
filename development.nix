@@ -15,6 +15,7 @@
             # "wasm32-wasi" # 最新のStable版ではサポートされていない？
         ];
     })
+    rust-analyzer
     cargo-shuttle
     cargo-llvm-cov # Rustのカバレッジ計測ツール
     cargo-binutils #cargo-llvm-covに使う
